@@ -12,7 +12,7 @@ public class ProdutosDAO {
     ResultSet resultset;
     ArrayList<ProdutosDTO> listagem = new ArrayList<>();
 
-    public void cadastrarProduto(ProdutosDTO produto) {
+    public void cadastrarProduto(ProdutosDTO produto) { // Cadastro salvar no btn Cadastrar na tela CadastroView
         String sql = "INSERT INTO produtos (nome, valor, status) VALUES (?, ?, ?)";
 
         try {
@@ -33,7 +33,7 @@ public class ProdutosDAO {
 
     }
 
-    public ArrayList<ProdutosDTO> listarProdutos() {
+    public ArrayList<ProdutosDTO> listarProdutos() { //Lista de produtos na tela ListagemView
         ArrayList<ProdutosDTO> listagem = new ArrayList<>();
 
         String sql = "SELECT * FROM produtos";
