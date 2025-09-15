@@ -10,7 +10,7 @@ public class conectaDAO {
         Connection conn = null;
 
         try {
-            // Carrega o driver MySQL explicitamente
+            // Carrega o driver MySQL
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             // String de conexão com serverTimezone para evitar warnings/falhas
