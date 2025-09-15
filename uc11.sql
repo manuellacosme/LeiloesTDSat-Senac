@@ -1,3 +1,6 @@
+CREATE DATABASE IF NOT EXISTS uc11;
+USE uc11;
+
 -- phpMyAdmin SQL Dump
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
