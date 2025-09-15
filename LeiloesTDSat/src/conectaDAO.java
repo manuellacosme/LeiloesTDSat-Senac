@@ -13,7 +13,7 @@ public class conectaDAO {
             // Carrega o driver MySQL
             Class.forName("com.mysql.cj.jdbc.Driver");
 
-            // String de conexão com serverTimezone para evitar warnings (erros)/falhas
+            // String de conexão com serverTimezone para evitar warnings (erros) e falhas
             String url = "jdbc:mysql://localhost:3306/uc11?useSSL=false&verifyServerCertificate=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
 
             conn = DriverManager.getConnection(url, "root", "MOC;1993");
